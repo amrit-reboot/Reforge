@@ -84,9 +84,7 @@ If `x1 == x2`, the CPU jumps to `LOOP`, so the `ADD` instruction should not exec
 
 ![image.png](https://media.geeksforgeeks.org/wp-content/uploads/20250502142202506624/instruction_execution_in_5_stage_pipeline.webp)
 
-<p align="center">
-  <img src="https://chipmunklogic.com/wp-content/uploads/2023/05/control-hazard-riscv-pipeline.jpg" width="800">
-</p>
+<img src="https://github.com/amrit-reboot/Reforge/blob/Amrit/Docs/Image/control-hazard.png" >
 
 #### Summary
 
