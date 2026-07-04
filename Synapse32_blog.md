@@ -39,7 +39,7 @@ This processor implements a classic 5-stage RISC pipeline:
    - Selects appropriate data source (ALU or memory)
 
 ### Pipeline Hazards
-A **pipeline hazard** is a situation where the CPU cannot execute the next instruction as planned, causing a **stall** or **delay** in the pipeline.
+#### A **pipeline hazard** is a situation where the CPU cannot execute the next instruction as planned, causing a **stall** or **delay** in the pipeline.
 There are **three types of pipeline hazards**.
 ---
 #### 1. Structural Hazard
@@ -83,6 +83,11 @@ If `x1 == x2`, the CPU jumps to `LOOP`, so the `ADD` instruction should not exec
 5 STAGE PIPELINE IN WORK
 
 ![image.png](https://media.geeksforgeeks.org/wp-content/uploads/20250502142202506624/instruction_execution_in_5_stage_pipeline.webp)
+
+<p align="center">
+  <img src="https://chipmunklogic.com/wp-content/uploads/2023/05/control-hazard-riscv-pipeline.jpg" width="800">
+</p>
+
 #### Summary
 
 | Hazard | Cause | Example | Solution |
@@ -92,4 +97,7 @@ If `x1 == x2`, the CPU jumps to `LOOP`, so the `ADD` instruction should not exec
 | **Control** | Branch or jump changes program flow | `BEQ`, `JAL` | Branch prediction, flush, or stall |
 
 > **Key Idea:** Pipeline hazards prevent smooth instruction execution. Modern processors reduce their impact using forwarding, branch prediction, pipeline flushing, and better hardware design.
-````
+
+------
+------
+
